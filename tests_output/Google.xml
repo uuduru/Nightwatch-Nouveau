@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="Google"
+    errors="1" failures="0" hostname="" id="" package="Google" skipped="1"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+    <system-err>
+        WebDriverError: An error occurred while creating a new ChromeDriver session: [WebDriverError] unknown error: cannot find Chrome binary
+  Verify if ChromeDriver is configured correctly; using:
+  {
+     start_process: true,
+     server_path: &#39;C:\\Users\\Y9G22V706\\Downloads\\Nightwatch Nouveau\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe&#39;,
+     port: 9515,
+     host: &#39;localhost&#39;,
+     ssl: false,
+     default_path_prefix: &#39;&#39;,
+     proxy: undefined,
+     cli_args: []
+  }
+
+ 
+  Set webdriver.log_path in your Nightwatch config to retrieve more logs from ChromeDriver.
+    </system-err>
+  
+
+    
+    <error message="An error occurred while creating a new ChromeDriver session: [WebDriverError] unknown error: cannot find Chrome binary"><![CDATA[
+      WebDriverError: An error occurred while creating a new ChromeDriver session: [WebDriverError] unknown error: cannot find Chrome binary
+    at Object.throwDecodedError (C:\Users\Y9G22V706\Downloads\Nightwatch Nouveau\node_modules\selenium-webdriver\lib\error.js:522:15)
+    at parseHttpResponse (C:\Users\Y9G22V706\Downloads\Nightwatch Nouveau\node_modules\selenium-webdriver\lib\http.js:548:13)
+    at Executor.execute (C:\Users\Y9G22V706\Downloads\Nightwatch Nouveau\node_modules\selenium-webdriver\lib\http.js:474:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+      ]]></error>  
+
+  
+    
+    <testcase
+      name="Test on Wap" classname="Google">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
