@@ -49,10 +49,10 @@ module.exports = {
       platformName:"Linux"
      },*/
     //path: '/',
-    cli_args : {
+    /*cli_args : {
       "webdriver.gecko.driver" : './bin/geckodriver',
       //"webdriver.chrome.driver" : './bin/chromedriver' 
-    }
+    }*/
 
     
 },
