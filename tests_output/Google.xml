@@ -10,12 +10,12 @@
 
   
     <system-err>
-        WebDriverError: An error occurred while creating a new ChromeDriver session: [WebDriverError] unknown error: cannot find Chrome binary
-  Verify if ChromeDriver is configured correctly; using:
+        WebDriverError: An error occurred while creating a new GeckoDriver session: [WebDriverError] Process unexpectedly closed with status 0
+  Verify if GeckoDriver is configured correctly; using:
   {
      start_process: true,
-     server_path: &#39;C:\\Users\\Y9G22V706\\Downloads\\Nightwatch Nouveau\\node_modules\\chromedriver\\lib\\chromedriver\\chromedriver.exe&#39;,
-     port: 9515,
+     server_path: &#39;C:\\Users\\Y9G22V706\\Downloads\\Nightwatch Nouveau\\node_modules\\geckodriver\\geckodriver.exe&#39;,
+     port: 4444,
      host: &#39;localhost&#39;,
      ssl: false,
      default_path_prefix: &#39;&#39;,
@@ -24,13 +24,13 @@
   }
 
  
-  Set webdriver.log_path in your Nightwatch config to retrieve more logs from ChromeDriver.
+  Set webdriver.log_path in your Nightwatch config to retrieve more logs from GeckoDriver.
     </system-err>
   
 
     
-    <error message="An error occurred while creating a new ChromeDriver session: [WebDriverError] unknown error: cannot find Chrome binary"><![CDATA[
-      WebDriverError: An error occurred while creating a new ChromeDriver session: [WebDriverError] unknown error: cannot find Chrome binary
+    <error message="An error occurred while creating a new GeckoDriver session: [WebDriverError] Process unexpectedly closed with status 0"><![CDATA[
+      WebDriverError: An error occurred while creating a new GeckoDriver session: [WebDriverError] Process unexpectedly closed with status 0
     at Object.throwDecodedError (C:\Users\Y9G22V706\Downloads\Nightwatch Nouveau\node_modules\selenium-webdriver\lib\error.js:522:15)
     at parseHttpResponse (C:\Users\Y9G22V706\Downloads\Nightwatch Nouveau\node_modules\selenium-webdriver\lib\http.js:548:13)
     at Executor.execute (C:\Users\Y9G22V706\Downloads\Nightwatch Nouveau\node_modules\selenium-webdriver\lib\http.js:474:28)

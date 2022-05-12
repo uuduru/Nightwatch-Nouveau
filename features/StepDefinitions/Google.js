@@ -1,4 +1,5 @@
 const { client } = require('nightwatch-api');
+const {driver} = require('selenium-webdriver');
 const { Given, Then, When } = require('cucumber');
 
 Given(/^I open Google's search page$/, () => {
