@@ -14,13 +14,13 @@
   Verify if GeckoDriver is configured correctly; using:
   {
      start_process: true,
-     server_path: &#39;C:\\Users\\Y9G22V706\\Downloads\\Nightwatch Nouveau\\node_modules\\geckodriver\\geckodriver.exe&#39;,
+     server_path: &#39;C:\\Users\\Y9G22V706\\Downloads\\Nightwatch_Nouveau\\node_modules\\geckodriver\\geckodriver.exe&#39;,
      port: 4444,
      host: &#39;localhost&#39;,
      ssl: false,
      default_path_prefix: &#39;&#39;,
      proxy: undefined,
-     cli_args: []
+     cli_args: {}
   }
 
  
@@ -31,9 +31,9 @@
     
     <error message="An error occurred while creating a new GeckoDriver session: [WebDriverError] Process unexpectedly closed with status 0"><![CDATA[
       WebDriverError: An error occurred while creating a new GeckoDriver session: [WebDriverError] Process unexpectedly closed with status 0
-    at Object.throwDecodedError (C:\Users\Y9G22V706\Downloads\Nightwatch Nouveau\node_modules\selenium-webdriver\lib\error.js:522:15)
-    at parseHttpResponse (C:\Users\Y9G22V706\Downloads\Nightwatch Nouveau\node_modules\selenium-webdriver\lib\http.js:548:13)
-    at Executor.execute (C:\Users\Y9G22V706\Downloads\Nightwatch Nouveau\node_modules\selenium-webdriver\lib\http.js:474:28)
+    at Object.throwDecodedError (C:\Users\Y9G22V706\Downloads\Nightwatch_Nouveau\node_modules\selenium-webdriver\lib\error.js:522:15)
+    at parseHttpResponse (C:\Users\Y9G22V706\Downloads\Nightwatch_Nouveau\node_modules\selenium-webdriver\lib\http.js:548:13)
+    at Executor.execute (C:\Users\Y9G22V706\Downloads\Nightwatch_Nouveau\node_modules\selenium-webdriver\lib\http.js:474:28)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
       ]]></error>  
 

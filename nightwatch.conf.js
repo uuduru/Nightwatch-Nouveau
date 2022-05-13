@@ -12,10 +12,35 @@
 //            |___/
 //
 
+
+
+
+
 module.exports = {
+  test_runner: {
+    // set cucumber as the runner
+    type: 'cucumber',
+
+    // define cucumber specific options
+
+    options: {
+      //set the feature path
+      //feature_path: 'node_modules/nightwatch/examples/cucumber-js/*/*.feature',
+      feature_path: 'Features/Hermes.feature',
+      //feature_path: 'Features/*.feature',
+      
+
+      // start the webdriver session automatically (enabled by default)
+      auto_start_session: true,
+
+      // use parallel execution in Cucumber
+      // set number of workers to use (can also be defined in the cli as --parallel 2
+      parallel: 2 
+    }
+  },
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: ["./Tests"],
+  src_folders: ['StepDefinitions'],
 
   // See https://nightwatchjs.org/guide/working-with-page-objects/using-page-objects.html
   page_objects_path: ['node_modules/nightwatch/examples/pages/'],
@@ -32,30 +57,25 @@ module.exports = {
   // See https://nightwatchjs.org/guide/#external-globals
   globals_path : '',
   
-  selenium: {
+  /*selenium: {
     start_process: false,
     useSSL: true,
     //protocol: 'https:',
-    //protocol: 'HTTPS',
-    //protocol: 'https://selenium.wap-test-platform-iks-086d0feb796ce72f6b820703a879a158-0000.eu-de.containers.appdomain.cloud',
-     //host : "https://selenium.wap-test-platform-iks-086d0feb796ce72f6b820703a879a158-0000.eu-de.containers.appdomain.cloud",
-     //host : 'selenium.wap-test-platform-iks-086d0feb796ce72f6b820703a879a158-0000.eu-de.containers.appdomain.cloud',
+    //host : 'selenium.wap-test-platform-iks-086d0feb796ce72f6b820703a879a158-0000.eu-de.containers.appdomain.cloud',
      host : '159.122.175.120',
      port: 30723, 
      //port: 80,
-     /*desiredCapabilities: {
+      desiredCapabilities: {
       browserName: "firefox",
       browserVersion :"99.0",
       platformName:"Linux"
-     },*/
+     },
     //path: '/',
     cli_args : {
       "webdriver.gecko.driver" : './bin/geckodriver',
       //"webdriver.chrome.driver" : './bin/chromedriver' 
-    }
-
-    
-},
+    }    
+},*/
 
   
   webdriver: {},
@@ -162,7 +182,8 @@ module.exports = {
     // to adapt this to your own project needs                                       |
     //////////////////////////////////////////////////////////////////////////////////
     'cucumber-js': {
-      src_folders: ['examples/cucumber-js/features/step_definitions'],
+      //src_folders: ['examples/cucumber-js/features/step_definitions'],
+      src_folders: ['features/StepDefinitions'],
 
       test_runner: {
         // set cucumber as the runner
@@ -171,7 +192,8 @@ module.exports = {
         // define cucumber specific options
         options: {
           //set the feature path
-          feature_path: 'node_modules/nightwatch/examples/cucumber-js/*/*.feature',
+          //feature_path: 'node_modules/nightwatch/examples/cucumber-js/*/*.feature',
+          feature_path: 'features/*.feature',
 
           // start the webdriver session automatically (enabled by default)
           // auto_start_session: true
