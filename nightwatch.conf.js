@@ -68,7 +68,7 @@ module.exports = {
      port: 30723, 
      //port: 80,
       desiredCapabilities: {
-      browserName: 'chrome',
+      browserName: 'firefox',
       browserVersion :"101.0",
       platformName:"Linux"
      },
@@ -95,7 +95,7 @@ module.exports = {
       },
 
       desiredCapabilities: {
-        browserName : 'chrome'
+        browserName : 'firefox'
       },
 
       webdriver: {
