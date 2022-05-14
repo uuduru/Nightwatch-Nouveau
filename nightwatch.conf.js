@@ -44,11 +44,9 @@ module.exports = {
   // if this is not specified, the test source must be passed as the second argument to the test runner.
   src_folders: ['StepDefinitions'],
   //src_folders: ['Tests/'],
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> a8f7cb779e096cc59b0047814bde9d2d8bfa51c3
+
+
   // See https://nightwatchjs.org/guide/working-with-page-objects/using-page-objects.html
   page_objects_path: ['node_modules/nightwatch/examples/pages/'],
 
@@ -72,15 +70,15 @@ module.exports = {
      host : '159.122.175.120',
      port: 30723, 
      //port: 80,
-<<<<<<< HEAD
+
       desiredCapabilities: {
       browserName: 'chrome',
       browserVersion :"101.0",
-=======
+
       /*desiredCapabilities: {
       browserName: "firefox",
       browserVersion :"99.0",
->>>>>>> a8f7cb779e096cc59b0047814bde9d2d8bfa51c3
+
       platformName:"Linux"
      },*/
     //path: '/',
