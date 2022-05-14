@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Run Maven on a Unix agent.
-                //sh 'npm i @cucumber/cucumber --save-dev --force'
+                sh 'npm install'
                 sh "npx nightwatch"
             }
         }
