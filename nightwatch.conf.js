@@ -57,7 +57,7 @@ module.exports = {
   // See https://nightwatchjs.org/guide/#external-globals
   globals_path : '',
   
-  /*selenium: {
+  selenium: {
     start_process: false,
     useSSL: true,
     //protocol: 'https:',
@@ -75,7 +75,7 @@ module.exports = {
       "webdriver.gecko.driver" : './bin/geckodriver',
       //"webdriver.chrome.driver" : './bin/chromedriver' 
     }    
-},*/
+},
 
   
   webdriver: {},
