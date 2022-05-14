@@ -65,11 +65,11 @@ module.exports = {
      host : '159.122.175.120',
      port: 30723, 
      //port: 80,
-      desiredCapabilities: {
+      /*desiredCapabilities: {
       browserName: "firefox",
       browserVersion :"99.0",
       platformName:"Linux"
-     },
+     },*/
     //path: '/',
     cli_args : {
       "webdriver.gecko.driver" : './bin/geckodriver',
