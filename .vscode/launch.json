@@ -7,13 +7,12 @@
         {
             "type": "pwa-node",
             "request": "launch",
+            "cwd": "${workspaceFolder}",
             "name": "Launch Program",
-            "cwd": "${workspaceRoot}",
-            
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceRoot}\\node_modules\\@cucumber\\cucumber\\bin\\cucumber-js"
+            "program": "${workspaceFolder}\\node_modules\\@cucumber\\cucumber\\bin\\cucumber-js"
         }
     ]
 }
