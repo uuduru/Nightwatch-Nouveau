@@ -18,7 +18,7 @@
 
 
 module.exports = {
-   test_runner: {
+  test_runner: {
     // set cucumber as the runner
     type: 'cucumber',
 
@@ -39,13 +39,10 @@ module.exports = {
       parallel: 2 
     }
   },
-  
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
   src_folders: ['StepDefinitions'],
   //src_folders: ['Tests/'],
-
-
 
   // See https://nightwatchjs.org/guide/working-with-page-objects/using-page-objects.html
   page_objects_path: ['node_modules/nightwatch/examples/pages/'],
@@ -70,17 +67,11 @@ module.exports = {
      host : '159.122.175.120',
      port: 30723, 
      //port: 80,
-
       desiredCapabilities: {
       browserName: 'chrome',
       browserVersion :"101.0",
-
-      /*desiredCapabilities: {
-      browserName: "firefox",
-      browserVersion :"99.0",
-
       platformName:"Linux"
-     },*/
+     },
     //path: '/',
     cli_args : {
       //"webdriver.chrome.driver" : './bin/chromedriver' 
@@ -403,3 +394,4 @@ module.exports = {
     }
   }
 };
+
