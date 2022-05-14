@@ -1,5 +1,5 @@
 const {Given, Then, When, Before} = require('@cucumber/cucumber');
-const {Builder} = require('selenium-webdriver');
+const { Builder, Capabilities } = require("selenium-webdriver");
 
 Given('Que le navigateur est ouvert, je cherche URL de WAP', function () {
     return browser.url('https://staging.wap.ibminteractive.fr/collaborateurs').waitForElementPresent('body', 10000);

@@ -13,7 +13,8 @@
 //
 
 
-
+//#!chmod +x node_modules/.bin/nightwatch
+//#!chmod +x node_modules/.bin/chromedriver
 
 
 module.exports = {
@@ -25,9 +26,9 @@ module.exports = {
 
     options: {
       //set the feature path
-      //feature_path: 'node_modules/nightwatch/examples/cucumber-js/*/*.feature',
-      feature_path: 'Features/Hermes.feature',
+      //
       //feature_path: 'Features/*.feature',
+      feature_path: 'Features/DemoWap.feature',
       
 
       // start the webdriver session automatically (enabled by default)
@@ -41,6 +42,7 @@ module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
   src_folders: ['StepDefinitions'],
+  //src_folders: ['Tests/'],
 
   // See https://nightwatchjs.org/guide/working-with-page-objects/using-page-objects.html
   page_objects_path: ['node_modules/nightwatch/examples/pages/'],
@@ -57,7 +59,7 @@ module.exports = {
   // See https://nightwatchjs.org/guide/#external-globals
   globals_path : '',
   
-  /*selenium: {
+  selenium: {
     start_process: false,
     useSSL: true,
     //protocol: 'https:',
@@ -66,16 +68,17 @@ module.exports = {
      port: 30723, 
      //port: 80,
       desiredCapabilities: {
-      browserName: "firefox",
-      browserVersion :"99.0",
+      browserName: 'chrome',
+      browserVersion :"101.0",
       platformName:"Linux"
      },
     //path: '/',
     cli_args : {
-      "webdriver.gecko.driver" : './bin/geckodriver',
       //"webdriver.chrome.driver" : './bin/chromedriver' 
+      "webdriver.gecko.driver" : './bin/geckodriver',
+      
     }    
-},*/
+},
 
   
   webdriver: {},
@@ -92,7 +95,7 @@ module.exports = {
       },
 
       desiredCapabilities: {
-        browserName : 'firefox'
+        browserName : 'chrome'
       },
 
       webdriver: {
