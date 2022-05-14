@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+     agent any
 
    tools {nodejs 'NodeJs'}
 
@@ -7,7 +7,8 @@ pipeline {
         stage('Build') {
             steps {
                 // Run Maven on a Unix agent.
-                //sh 'npm i @cucumber/cucumber --save-dev --force'
+                sh 'npm run node_modules/.bin/cucumber-js'
+                
                 sh "npx nightwatch"
             }
         }
