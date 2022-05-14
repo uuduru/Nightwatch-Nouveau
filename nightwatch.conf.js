@@ -17,7 +17,7 @@
 
 
 module.exports = {
-  test_runner: {
+   /*test_runner: {
     // set cucumber as the runner
     type: 'cucumber',
 
@@ -25,9 +25,9 @@ module.exports = {
 
     options: {
       //set the feature path
-      //feature_path: 'node_modules/nightwatch/examples/cucumber-js/*/*.feature',
-      feature_path: 'Features/DemoWap.feature',
+      //
       //feature_path: 'Features/*.feature',
+      feature_path: 'Features/DemoWap.feature',
       
 
       // start the webdriver session automatically (enabled by default)
@@ -37,11 +37,13 @@ module.exports = {
       // set number of workers to use (can also be defined in the cli as --parallel 2
       parallel: 2 
     }
-  },
+  },*/
+  
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: ['StepDefinitions'],
-
+  //src_folders: ['StepDefinitions'],
+  src_folders: ['Tests/'],
+  
   // See https://nightwatchjs.org/guide/working-with-page-objects/using-page-objects.html
   page_objects_path: ['node_modules/nightwatch/examples/pages/'],
 
