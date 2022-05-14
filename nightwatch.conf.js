@@ -17,7 +17,7 @@
 
 
 module.exports = {
-   /*test_runner: {
+   test_runner: {
     // set cucumber as the runner
     type: 'cucumber',
 
@@ -37,7 +37,7 @@ module.exports = {
       // set number of workers to use (can also be defined in the cli as --parallel 2
       parallel: 2 
     }
-  },*/
+  },
   
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
