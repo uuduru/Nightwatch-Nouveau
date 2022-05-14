@@ -26,7 +26,7 @@ module.exports = {
     options: {
       //set the feature path
       //feature_path: 'node_modules/nightwatch/examples/cucumber-js/*/*.feature',
-      feature_path: 'Features/Hermes.feature',
+      feature_path: 'Features/DemoWap.feature',
       //feature_path: 'Features/*.feature',
       
 
